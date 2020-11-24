@@ -1,7 +1,8 @@
 import Section from './components/section'
 import Profile from './components/profile/profile'
 import user from './components/profile/user.json'
-import statistics from './components/statistics/statistics'
+import StatisticsList from './components/statistics/statisticsList'
+import statisticalData from './components/statistics/statistical-data.json'
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       </Section>
 
       <Section title="Секция статистики">
-
+         <StatisticsList title="Upload stats" stats={statisticalData} />,
       </Section>
       <Section title="Список друзей">
 
