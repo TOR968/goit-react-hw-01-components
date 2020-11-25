@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 function StatisticsList({stats})
 {
   return (<section className="statistics">
+    <h2 class="title">Upload stats</h2>
     <ul className="stat-list">
       {stats.map(item => (
         <li key={item.id} className="item">

@@ -12,7 +12,7 @@ function App() {
       </Section>
 
       <Section title="Секция статистики">
-         <StatisticsList title="Upload stats" stats={statisticalData} />,
+         <StatisticsList stats={statisticalData} />,
       </Section>
       <Section title="Список друзей">
 
