@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function StatisticsList({stats})
 {
   return (<section className="statistics">
-    <h2 class="title">Upload stats</h2>
+    <h2 className="title">Upload stats</h2>
     <ul className="stat-list">
       {stats.map(item => (
           <Statistics
@@ -21,7 +21,7 @@ function StatisticsList({stats})
 StatisticsList.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired
     }),
   ),
 };
