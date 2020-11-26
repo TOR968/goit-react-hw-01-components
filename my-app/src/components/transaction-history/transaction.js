@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Transaction({type, amount, currency}) {
     return (
-<table class="transaction-history">
+<table className="transaction-history">
   <thead>
     <tr>
         <th>{type}</th>
@@ -29,9 +29,9 @@ function Transaction({type, amount, currency}) {
 }
  
 Transaction.propTypes = {
-    avatar: PropTypes.string.isRequired,
-    isOnline: PropTypes.bool.isRequired,
-    name: PropTypes.string.isRequired
+    type: PropTypes.string.isRequired,
+    amount: PropTypes.string.isRequired,
+    currency: PropTypes.string.isRequired
 };
 
 export default Transaction;
