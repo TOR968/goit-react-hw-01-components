@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
 
-// function title() {}
-
 function Statistics ({ label, percentage }){ 
     return (<li className="item">
       <span className="label">{label}</span>
@@ -10,8 +8,6 @@ function Statistics ({ label, percentage }){
 )
 
 };
-
-
 
 Statistics.propTypes = {
     label: PropTypes.string.isRequired,
