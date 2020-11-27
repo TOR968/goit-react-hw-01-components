@@ -15,7 +15,7 @@ function App() {
         <Profile {...user}/>
       </Section>
       <Section title="Секция статистики">
-         <StatisticsList stats={statisticalData} />
+        <StatisticsList title={"Upload stats"} stats={statisticalData} />
       </Section>
       <Section title="Список друзей">
         <FriendList friends={friends} />

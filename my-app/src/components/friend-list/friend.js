@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import s from './friend.module.css';
 
 function Friend({avatar, name, isOnline}) {
     return (
-        <li className="item">
-            <span className="status">{isOnline}</span>
-            <img className="avatar" src={avatar} alt={name} width="48" />
-            <p className="name">{name}</p>
+        <li className={s.item}>
+            <span className={s.status}>{isOnline}</span>
+            <img className={s.avatar} src={avatar} alt={name} width="48" />
+            <p className={s.name}>{name}</p>
         </li>
     )
 }

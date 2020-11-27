@@ -1,78 +1,72 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.bg {
-  padding: 40px;
-  background: #eff3f6;
-}
-
 .profile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   width: 300px;
   height: 400px;
   margin: 0 auto;
-  border-radius: 3px;
   background-color: #fff;
-  border: 1px solid #e6e6e6;
-
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.description {
+  border-radius: 1%;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.51);
+  position: relative;
   text-align: center;
+  font-family: Arial, serif;
 }
-
+.description {
+  padding-top: 20px;
+}
 .avatar {
+  border-radius: 50%;
   width: 130px;
   border-radius: 50%;
   margin-top: 40px;
   margin-bottom: 20px;
 }
-
 .name {
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 700;
 }
-
-.tag,
+.tag {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(122, 116, 116);
+}
 .location {
-  margin-bottom: 5px;
-  color: #768696;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(122, 116, 116);
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+}
+.stats li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100px;
+  background-color: rgb(235, 236, 238);
+  border: rgb(225, 228, 233) solid 1px;
+  border-radius: 1%;
+  transition: all 200ms linear;
+  cursor: pointer;
+}
+.stats li:hover {
+  background-color: rgb(219, 221, 223);
 }
 
 .label {
-  color: #768696;
+  display: block;
+  font-size: 14px;
+  color: rgb(122, 116, 116);
 }
-
-.stats {
-  width: 100%;
-  height: 100px;
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  background-color: #f3f6f9;
-  text-align: center;
-}
-
-.stats > li {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100px;
-  border-top: 1px solid #e6e6e6;
-}
-
-.stats > li:not(:last-child) {
-  border-right: 1px solid #e6e6e6;
-}
-
 .quantity {
-  font-weight: bold;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px;
 }
