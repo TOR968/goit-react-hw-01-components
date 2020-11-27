@@ -5,7 +5,7 @@ import s from './friend.module.css';
 function Friend({avatar, name, isOnline}) {
     return (
         <li className={s.item}>
-            <span className={s.status}>{isOnline}</span>
+            <span className={isOnline ? s.offline : s.online}></span>
             <img className={s.avatar} src={avatar} alt={name} width="48" />
             <p className={s.name}>{name}</p>
         </li>

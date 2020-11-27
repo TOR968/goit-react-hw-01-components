@@ -20,7 +20,7 @@
 .item:hover {
   box-shadow: 4px 4px 7px 5px rgba(0, 0, 0, 0.38);
 }
-.status {
+.offline {
   display: block;
   height: 20px;
   width: 20px;
@@ -28,7 +28,12 @@
   border-radius: 50%;
   margin: 0 8px 0;
 }
-.isActive {
+.online {
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin: 0 8px 0;
   background-color: rgb(17, 168, 11);
 }
 .avatar {
